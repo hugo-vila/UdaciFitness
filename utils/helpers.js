@@ -15,7 +15,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, {backgroundColor: red}]}>
+          <View>
             <MaterialIcons
               name='directions-run'
               color={black}
@@ -33,7 +33,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, {backgroundColor: orange}]}>
+          <View>
             <MaterialCommunityIcons
               name='bike'
               color={black}
@@ -51,7 +51,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, {backgroundColor: blue}]}>
+          <View>
             <MaterialCommunityIcons
               name='swim'
               color={black}
@@ -69,7 +69,7 @@ export function getMetricMetaInfo (metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, {backgroundColor: lightPurp}]}>
+          <View>
             <FontAwesome
               name='bed'
               color={black}
@@ -87,7 +87,7 @@ export function getMetricMetaInfo (metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, {backgroundColor: pink}]}>
+          <View>
             <MaterialCommunityIcons
               name='food'
               color={black}

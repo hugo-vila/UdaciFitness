@@ -19,7 +19,7 @@ export function getMetricMetaInfo (metric) {
             <MaterialIcons
               name='directions-run'
               color={black}
-              size={35}
+              size={21}
             />
           </View>
         )
@@ -37,7 +37,7 @@ export function getMetricMetaInfo (metric) {
             <MaterialCommunityIcons
               name='bike'
               color={black}
-              size={32}
+              size={21}
             />
           </View>
         )
@@ -55,7 +55,7 @@ export function getMetricMetaInfo (metric) {
             <MaterialCommunityIcons
               name='swim'
               color={black}
-              size={35}
+              size={21}
             />
           </View>
         )
@@ -73,7 +73,7 @@ export function getMetricMetaInfo (metric) {
             <FontAwesome
               name='bed'
               color={black}
-              size={30}
+              size={21}
             />
           </View>
         )
@@ -91,7 +91,7 @@ export function getMetricMetaInfo (metric) {
             <MaterialCommunityIcons
               name='food'
               color={black}
-              size={35}
+              size={21}
             />
           </View>
         )
@@ -102,6 +102,12 @@ export function getMetricMetaInfo (metric) {
   return typeof metric === 'undefined'
     ? info
     : info[metric]
+}
+
+export function getDailyReminderValue () {
+  return {
+    today: "👋 Don't forget to log your data today!"
+  }
 }
 
 export function isBetween (num, x, y) {

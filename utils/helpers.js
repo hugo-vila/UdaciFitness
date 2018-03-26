@@ -1,9 +1,21 @@
 // utils/helpers.js
 
 import React  from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { FontAwesome, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
-import { black } from './colors'
+import { black, red, orange, blue, lightPur, pink, white } from './colors'
+
+const styles = StyleSheet.create({
+  iconContainer: {
+    padding: 5,
+    borderRadius: 8,
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 20,
+  },
+})
 
 export function getMetricMetaInfo (metric) {
   const info = {
@@ -15,7 +27,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View>
+          <View style={[styles.iconContainer, {backgroundColor: red}]}>
             <MaterialIcons
               name='directions-run'
               color={black}
@@ -33,7 +45,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View>
+          <View style={[styles.iconContainer, {backgroundColor: orange}]}>
             <MaterialCommunityIcons
               name='bike'
               color={black}
@@ -51,7 +63,7 @@ export function getMetricMetaInfo (metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View>
+          <View style={[styles.iconContainer, {backgroundColor: blue}]}>
             <MaterialCommunityIcons
               name='swim'
               color={black}
@@ -69,7 +81,7 @@ export function getMetricMetaInfo (metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View>
+          <View style={[styles.iconContainer, {backgroundColor: lightPur}]}>
             <FontAwesome
               name='bed'
               color={black}
@@ -87,7 +99,7 @@ export function getMetricMetaInfo (metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View>
+          <View style={[styles.iconContainer, {backgroundColor: pink}]}>
             <MaterialCommunityIcons
               name='food'
               color={black}
